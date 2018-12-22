@@ -1,0 +1,17 @@
+start_epoch = 1
+num_classes=10
+learning_rate = 0.0001                          #Initial learning rate.
+momentum = 0.9
+decay = 0.0005
+epochs = 10                                     #Number of epochs to train for.
+batch_size = 1                                #Batch size.
+data_dir = ''                                   #Directory where data is stored 
+model_dir = ''                                  #Directory to put the model's fit
+eval_freq = 20                                  #Frequency at which to validate the model
+num_monte_carlo = 50                            #Network draws to compute predictive probabilities.
+architecture = 'alexnet'                        #Network architecture to use
+kernel_posterior_scale_mean = -9.0              #Initial kernel posterior mean of the scale (log var) for q(w)
+kernel_posterior_scale_constraint = 0.2         #Posterior kernel constraint for the scale (log var) of q(w).
+kernel_posterior_scale_stddev = 0.1
+kl_annealing = 50                               #Epochs to anneal the KL term (anneals from 0 to 1)
+subtract_pixel_mean = False                     #Boolean for normalizing the images
