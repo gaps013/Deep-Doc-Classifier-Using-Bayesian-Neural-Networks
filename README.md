@@ -13,19 +13,20 @@ Once the images are returned they are passed to **bayesian_cnn.bayesian_alexnet*
   
 Once the model is created, it is used to minimise the **ELBO loss**. Also posterior statistics weights are extracted for layers with weight distributions for visualization.  And model is trained, and accuracy is ploted along with the Weight Means and Standard deviation.  
 ## config.py: 
-This file handles the parameters such as:
-start_epoch = 1                                 **Initial epoch.**
-num_classes=10                                  **Number of class labels.**
-learning_rate = 0.0001                          **Initial learning rate.**
-momentum = 0.9                                  **Initial Momemntum for SGD.**
-decay = 0.0005                                  **Initial Decay for SGD.**
-epochs = 10                                     **Number of epochs to train for.**
-batch_size = 1                                  **Batch size.**
-eval_freq = 20                                  **Frequency at which to validate the model.**
-num_monte_carlo = 50                            **Network draws to compute predictive probabilities.**
-architecture = 'alexnet'                        **Network architecture to use.**
-kernel_posterior_scale_mean = -9.0              **Initial kernel posterior mean of the scale (log var) for q(w)**
-kernel_posterior_scale_constraint = 0.2         **Posterior kernel constraint for the scale (log var) of q(w).**
-kernel_posterior_scale_stddev = 0.1
-kl_annealing = 50                               **Epochs to anneal the KL term (anneals from 0 to 1).**
-subtract_pixel_mean = False                     **Boolean for normalizing the images.**
+This file handles the parameters such as:  
+start_epoch = 1                                 **Initial epoch.**  
+num_classes=10                                  **Number of class labels.**  
+learning_rate = 0.0001                          **Initial learning rate.**  
+momentum = 0.9                                  **Initial Momemntum for SGD.**  
+decay = 0.0005                                  **Initial Decay for SGD.**  
+epochs = 10                                     **Number of epochs to train for.**  
+batch_size = 1                                  **Batch size.**  
+eval_freq = 20                                  **Frequency at which to validate the model.**  
+num_monte_carlo = 50                            **Network draws to compute predictive probabilities.**  
+architecture = 'alexnet'                        **Network architecture to use.**  
+kernel_posterior_scale_mean = -9.0              **Initial kernel posterior mean of the scale (log var) for q(w)**  
+kernel_posterior_scale_constraint = 0.2         **Posterior kernel constraint for the scale (log var) of q(w).**  
+kernel_posterior_scale_stddev = 0.1  
+kl_annealing = 50                               **Epochs to anneal the KL term (anneals from 0 to 1).**  
+subtract_pixel_mean = False                     **Boolean for normalizing the images.**  
+  
