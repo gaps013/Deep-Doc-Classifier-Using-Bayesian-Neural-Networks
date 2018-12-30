@@ -14,7 +14,7 @@ Once the images are returned they are passed to **bayesian_cnn.bayesian_alexnet*
 Once the model is created, it is used to minimise the **ELBO loss**. Also posterior statistics weights are extracted for layers with weight distributions for visualization.  And model is trained, and accuracy is ploted along with the Weight Means and Standard deviation.  
 ## config.py: 
 This file handles the parameters such as:  
-start_epoch = 1                                 **Initial epoch.**  
+- start_epoch = 1                                 **Initial epoch.**  
 num_classes=10                                  **Number of class labels.**  
 learning_rate = 0.0001                          **Initial learning rate.**  
 momentum = 0.9                                  **Initial Momemntum for SGD.**  
